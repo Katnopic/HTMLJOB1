@@ -4,6 +4,10 @@ body {
 	margin: 20px;
 	background-color: Cornsilk;
 	}
+div
+{
+	padding: 10px 10px 10px 10px
+}
 #logo
 	{
 		background-image: url("logoback.jpg");
@@ -13,12 +17,13 @@ body {
 #links-block
 	{
     border-style: solid;
-    border-width: 10px;
+    border-width: 1px;
 	font-size: 40px;
 	color:DarkBlue ;
 	background-color: Azure;
 	display:inline;
 	float: right;
+	display:inline;
 	}
 li
 {
@@ -32,15 +37,18 @@ li
 #block-container
 {
     text-align:center;
-  	width: 100%
+  	width: 100%;
+  	display: inline-block;
 }
 
 #main-block
 {
 	float: none;
+	display:inline;
 }
 
 #aside-block
 {
 	float: left;
+	display:inline;
 }
