@@ -14,7 +14,16 @@ body {
 	{
     border-style: solid;
     border-width: 10px;
-	font-size: 25px;
-	position: right;
-	color:#4C4E39;
+	font-size: 40px;
+	color:DarkBlue ;
+	background-color: Azure;
 	}
+li
+{
+	margin: 25px;
+}
+#LinkList
+	{
+	position: left;
+	}
+
