@@ -27,7 +27,7 @@ div
 	
 #aside-block, #links-block
 {
-	display:inline;
+	display:inline-block;
 	border-style: solid;
     border-width: 1px;
 	font-size: 20px;
@@ -55,8 +55,14 @@ li
 
 #main-block
 {
-	float: none;
-	display:inline;
+	display:inline-block;
+	border-style: solid;
+    border-width: 1px;
+	font-size: 20px;
+	color:#8B4513 ;
+	background-color: Azure;
+	position: absolute;
+	width: 50%;
 }
 
 
