@@ -9,11 +9,11 @@ div
 	padding: 10px;
 }
 #logo
-	{
-		background-image: url("logoback.jpg");
-		padding: 20px;
-		text-align: center;
-	}
+{
+	background-image: url("logoback.jpg");
+	padding: 20px;
+	text-align: center;
+}
 	
 #aside-block
 {
@@ -81,4 +81,9 @@ a:HOVER {
 p
 {
 	font-size: 15px;
+}
+
+#bold
+{
+	font-weight: bold;
 }
