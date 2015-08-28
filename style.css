@@ -34,6 +34,7 @@ div
 	color:#8B4513 ;
 	background-color: Azure;
 	width: 15%;
+	position: static;
 }
 
 li
@@ -62,7 +63,7 @@ li
 	font-size: 20px;
 	color:#8B4513 ;
 	background-color: Azure;
-
+	width: 50%;
 }
 
 
