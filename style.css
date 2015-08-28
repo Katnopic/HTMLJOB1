@@ -37,6 +37,17 @@ div
 	position: static;
 }
 
+#links-exmp
+{
+	border-style: solid;
+    border-width: 1px;
+	font-size: 20px;
+	color:#8B4513 ;
+	background-color: Azure;
+	width: 20%;
+	position: static;
+}
+
 li
 {
 	margin: 8px;
