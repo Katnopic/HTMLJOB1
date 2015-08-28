@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	font: normal 11px/16px Tahoma, Verdana, Arial, sans-serif;
 	color: #333;
@@ -97,4 +98,100 @@ h1
 img
 {
 	width: 100%;
+=======
+body {
+	font: normal 11px/16px Tahoma, Verdana, Arial, sans-serif;
+	color: #333;
+	margin: 20px;
+	background-color: Cornsilk;
+	}
+div
+{
+	padding: 10px;
+}
+#logo
+{
+	background-image: url("logoback.jpg");
+	padding: 20px;
+	text-align: center;
+}
+	
+#aside-block
+{
+	float: left;
+}
+	
+#links-block
+{
+	float: right;
+}
+	
+#aside-block, #links-block
+{
+	display:inline-block;
+	border-style: solid;
+    border-width: 1px;
+	font-size: 20px;
+	color:#8B4513 ;
+	background-color: Azure;
+	width: 20%;
+	position: static;
+}
+
+li
+{
+	margin: 8px;
+}
+#link-list
+	{
+	position: left;
+	margin: 5px;
+	}
+
+#block-container
+{
+    text-align:center;
+  	display: inline-block;
+  	padding: 10px 0px 0px 0px;
+  	width: 100%;
+ }
+
+#main-block
+{
+	display: inline-block;
+	border-style: solid;
+    border-width: 1px;
+	font-size: 20px;
+	color:#8B4513 ;
+	background-color: Azure;
+	width: 50%;
+}
+
+
+
+a:LINK, a:VISITED, a:ACTIVE
+{
+	color: #8B4513;
+}
+
+
+/* mouse over link */
+a:HOVER {
+    color: #DEB887;
+}
+
+p
+{
+	font-size: 15px;
+}
+
+#bold
+{
+	font-weight: bold;
+}
+
+h1
+{
+	text-decoration: underline;
+>>>>>>> branch 'branch1' of https://github.com/Katnopic/HTMLJOB1
 }
