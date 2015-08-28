@@ -88,3 +88,8 @@ p
 {
 	font-weight: bold;
 }
+
+h1
+{
+	text-decoration: underline;
+}
