@@ -141,3 +141,8 @@ select
 {
 	width: 120px;	
 }
+
+hr {
+	color: #8B4513;
+	border-style: solid;
+}
