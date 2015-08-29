@@ -18,12 +18,9 @@
 				<li><a href="#html1">HTML למתחילים</a></li>			
 				<li><a href="#html2">מהו HTML?</a></li>
 				<li><a href="#html3">איך נראה קוד HTML?</a></li>
-				<li><a href="#listex">דוגמאות לרשימות</a></li>				
-				<li><a href="#ol">&ltol&gt</a></li>
-				<li><a href="#dl">&ltdl&gt</a></li>
-				<li><a href="#tableex">דוגמאות לטבלאות</a></li>
-				<li><a href="#tab1">טבלה פשוטה</a></li>
-				<li><a href="#dl">דוגמאות ל-Form</a></li>
+				<li><a href="#listex">רשימות</a></li>				
+				<li><a href="#tableex">טבלאות</a></li>
+				<li><a href="#forms">טפסים</a></li>
 			</ul>
 	</div>
 		
@@ -36,7 +33,7 @@
 				<section>
 					<a name="html2"></a> 
 				  <h2>מהו HTML?</h2>
-				  <p><span id="bold">HTML</span> (ראשי תיבות של HyperText Markup Language) הינה שפת תגיות לתצוגה ועיצוב דפי אינטרנט ותוכן לתצוגה בדפדפן. זו שפת התיכנות המרכזית בעולם האינטרנט, המהווה שלד למרבית עמודי התוכן באינטרנט.</p>
+				  <p><span class="bold">HTML</span> (ראשי תיבות של HyperText Markup Language) הינה שפת תגיות לתצוגה ועיצוב דפי אינטרנט ותוכן לתצוגה בדפדפן. זו שפת התיכנות המרכזית בעולם האינטרנט, המהווה שלד למרבית עמודי התוכן באינטרנט.</p>
 				</section>
 				<section>
 					<p>השפה מאפשרת עיצוב תוכן בצורה מהירה, קלה ללימוד באופן יחסי וקלה לכתיבה.</p>
@@ -44,67 +41,137 @@
 				<section>
 					<a name="html3"></a> 
 					<h3>איך נראה קוד HTML?</h3>
-					<p>כדי לראות את קוד ה- HTML של דף באינטרנט, נגלוש לאתר כלשהו, למשל לאתר <a href="http://www.google.com">http://www.google.com</a>, נלחץ על הכפתור הימני של העכבר ונבחר באפשרות View Source (בעברית - הצג קוד מקור):
-						<figure>
-  							<img src="view-source.png" alt="View Source">
-						</figure>
+					<p>כדי לראות את קוד ה- HTML של דף באינטרנט, נגלוש לאתר כלשהו, למשל לאתר <a href="http://www.google.com">http://www.google.com</a>, נלחץ על הכפתור הימני של העכבר ונבחר באפשרות View Source (בעברית - הצג קוד מקור): </p>
+					<figure>
+  						<img src="view-source.png" alt="View Source" />
+					</figure> <br />
+					<p>
+						יש לשים לב שהשפה בנויה מתגיות, ז"א שלכל תגית שפותחים יש לסגור את אותה התגית. <br />
+						לדוגמא: <br />
+						<span class="htmltag">&ltp&gt</span>Some story about a man.<span class="htmltag">&lt/p&gt</span>
 					</p>
 				</section>
-				
-				<header>	
+				<section>	
 					<a name="listex"></a> 
-					 <h1>דוגמאות לרשימות</h1>
-				</header>
-				<section>
-					<a name="ol"></a> 
+					 <h3>רשימות</h3>
 					<h5>&ltol&gt</h5>
-						<p>&ltol&gt זוהי רשימה ממוספרת. דוגמא:</p>
+						<p>&ltol&gt זוהי רשימה ממוספרת.<br />
+						אנו פותחים רשימה באמצעות התגית &ltol&gt, ולאחר מכן משתמשים בתגית &ltli&gt עבור כל פריט ברשימה. 
+						<br /> לדוגמא:</p>
 						<ol>
-						    <li>קפה</li>
-						    <li>תה</li>	
-						    <li>חלב</li>
+						    <li>milk</li>
+						    <li>coffee</li>	
+						    <li>tea</li>
 					    </ol>
-						
-	
-					<a name="dl"></a> 
-					<h5>&ltdl&gt</h5>
-						<p>&ltdl&gt זוהי רשימה עם תיאור לכל פריט. לדוגמא:</p>
+					   	<p>
+					    קוד:<br />
+					    <div class='codepart'>
+						    &ltol&gt <br />
+							    &nbsp;&nbsp;&nbsp; &ltli&gtmilk&lt/li&gt<br />
+							    &nbsp;&nbsp;&nbsp;&#09&ltli&gtcoffee&lt/li&gt<br />
+							    &nbsp;&nbsp;&nbsp;&#09&ltli&gttea&lt/li&gt<br />
+						    &lt/ol&gt
+					    </div>
+					    </p>    
+						<h5>&ltdl&gt</h5>
+						<p>&ltdl&gt זוהי רשימה עם תיאור לכל פריט. <br />
+						אנו פותחים רשימה באמצעות התגית &ltdl&gt, ולאחר מכן משתמשים בתגית &ltdt&gt עבור שם הפריט ברשימה, ו- &ltdd&gt עבור התיאור. <br />
+						לדוגמא:						
+						</p>
 						<dl>
-						  <dt>קפה</dt>
-						  <dd>משקה חם ושחור</dd>
-						  <dt>חלב</dt>
-						  <dd>משקה קר ולבן</dd>
+						  <dt>Coffee</dt>
+						  <dd>Hot dark-brown drink</dd>
+						  <dt>Milk</dt>
+						  <dd>Cold white drink</dd>
 						</dl>
-
+						<p>
+							קוד:<br />
+						    <div class='codepart'>
+	   						&ltdl&gt <br />
+							  &nbsp;&nbsp;&nbsp;&ltdt&gtCoffee&lt/dt&gt <br />
+							  &nbsp;&nbsp;&nbsp;&ltdd&gtHot dark-brown drink&lt/dd&gt <br />
+							  &nbsp;&nbsp;&nbsp;&ltdt&gtMilk&lt/dt&gt <br />
+							  &nbsp;&nbsp;&nbsp;&ltdd&gtCold white drink&lt/dd&gt <br />
+							&lt/dl&gt <br />
+					    </div>
+						</p>
 				</section>
-				
-				<header>	
-					<a name="tableex"></a> 
-					 <h1>דוגמאות לטבלאות</h1>
-				</header>
 				<section>
-					<a name="ol"></a> 
+					<a name="tableex"></a> 
+					 <h3>טבלאות</h3>
 					<h5>טבלה פשוטה</h5>
-						<p>זוהי טבלה פשוטה המכילה מידע</p>
-						<table id = "tab1" border="1" style="width:50%">
+						<p>טבלה היא אמצעי להצגת מידע בצורה נוחה. <br />
+						בטבלה נשתמש בתגית &lttable&gt &lt/table&gt ע"מ לציין תחילת תבלה, ביניהם נשים &lttr&gt &lt/tr&gt ע"מ לציין שורה חדשה בטבלה, וביניהם נשים &lttd&gt&lt/td&gt עבור כל תא בשורה.
+						<br />
+						לדוגמא:</p>
+						<table>
 						  <tr>
-						    <td>רו</td>
-						    <td>כהן</td>		
+						  	<th>שם</th>
+						  	<th>כתובת</th>
+						  	<th>כמות פריטים</th>
+						  </tr>
+						  <tr>
+						    <td>רותם כהן</td>
+						    <td>תל אביב</td>		
 						    <td>50</td>
 						  </tr>
 						  <tr>
-						    <td>אבה</td>
-						    <td>חתוכה</td>		
+						    <td>אבה חתוכה</td>
+						    <td>ראש העין</td>		
 						    <td>94</td>
 						  </tr>
 						  <tr>
-						    <td>ברק</td>
-						    <td>מחרר</td>		
+						    <td>ברק רן</td>
+						    <td>חיפה</td>		
 						    <td>80</td>
 						  </tr>
+						</table>						
+				</section>
+				<section>
+					<a name="forms"></a>
+					<h3>טפסים</h3>
+					<p>טפסים הם דרך להעביר מידע בין המשתמש לשרת אינטרנט. <br />
+					ישנם מספר דרכים להעברת מידע, כגון תיבת טקסט, תיבת סימון ועוד. <br />
+					דוגמא לטופס: </p>
+					<form>
+						<table>
+							<tr>
+								<td>שם:</td>
+								<td><input type="text" /></td>
+							</tr>
+							<tr>
+								<td>מין:</td>
+								<td>
+									<input id="radio" type="radio" name="sex" value="male">זכר<br>
+									<input id="radio" type="radio" name="sex" value="female">נקבה
+								</td>
+							</tr>
+							<tr>
+								<td>אימייל:</td>
+								<td><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td>
+							</tr>
+							<tr>
+								<td>מספר טלפון:</td>
+								<td><input type="text" pattern="[0-9-]{9,11}$" /></td>
+							</tr>
+							<tr>
+								<td>עיר מגורים:</td>
+								<td>
+									<select>
+									  <option>תל אביב</option>
+									  <option>רמת גן</option>
+									  <option>חיפה</option>
+									  <option>אילת</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>לשמור פרטים?</td>
+								<td><input type="checkbox" /></td>
+							</tr>
+							<tr><td><input type="submit" value="שלח" /> </td><td><input type="reset" value="אפס טופס" /></td></tr>
 						</table>
-
-
+					</form>
 				</section>
 			</article>
 	</div>
@@ -118,7 +185,6 @@
 					  <a href="https://www.codecademy.com/learn">CodeAcademy</a>
 			      </nav>
 			</aside>
-
 	</div>
 	
 	<footer>
